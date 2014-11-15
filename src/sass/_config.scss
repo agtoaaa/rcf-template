@@ -1,0 +1,34 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+//Define google font
+$font-url--google:'http://fonts.googleapis.com/css?family=Oswald';
+$font-family--primary:'Oswald', sans-serif;
+//Font font-weight
+$font-weight--thin:300;
+$font-weight--medium:400;
+$font-weight--bold:700;
+//color
+$white: #fff;
+$black: #0b0b0b;
+$grey: #797e83;
+$royal-blue: #131f43;
+$tiffany-blue: #60DFE5;
+$pastel-green: #6FED61;
+$thunderbird: #B3141A;
+$tangerine	: #DB9500;
+//color usage
+$color-primary: $royal-blue;
+$color-secondary: $grey;
+$color-shadow: rgba($black, .2);
+//UI colors
+
+//text 
+$base__font-size: 16px;
+$base__line: 24px;
+//backgorund
+$primary-bg: url("../img/rcf_tail.jpg");
+
+
+
+
+

@@ -1,0 +1,77 @@
+@import '_config';
+@import '_utilities';
+@import '_normalize';
+@import 'jeet/index';
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size:$base__font-size; 
+	line-height: ($base__line/$base__font-size);
+	background: $primary-bg; 
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+}	
+
+h1, h2, h3, h4, li, span, a {font-family:$font-family--primary; color:$white;}
+
+header {padding: em(48px) 0;}
+.fa {color:$white;}
+h1 { 
+	font-weight: $font-weight--thin;
+	font-size: em(42px);
+	line-height: (46px / 42px);
+	margin-bottom: em(70px, 42px);
+	color:$white;
+}
+h2 {
+	font-weight: $font-weight--thin;
+	font-size: em(42px);
+	line-height: (46px / 42px);
+	margin-bottom: em(70px, 42px);
+	color:$royal-blue;
+	background-color: $grey;
+}
+
+li{display: inline; padding:0 10px 0 10px;}
+a{text-decoration: underline;}
+
+//centered
+
+
+//@include edit();
+
+
+//jeet
+.rcf {
+	@include center(200px);
+	position: fixed; /* or absolute */
+  	top: 50%;left:20%;
+}
+
+.nav {
+	@include center(90%);
+}
+.title {
+	@include span(4/5);
+}
+.burger {
+	@include span(1/5);
+}
+.content-a {
+	@include center (960px);
+}
+.quarter {
+	@include col(1/4, $gutter: 1);
+}
+.s-quarter {
+	@include span(1/4);
+}
+.half {
+	@include col(1/2, $gutter: 1);
+}
